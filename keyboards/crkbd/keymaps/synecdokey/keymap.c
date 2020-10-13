@@ -57,20 +57,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                       |--------+--------+--------+--------+--------+--------|
       KC_BSLS, KC_SCLN,    KC_Q,    KC_J,    KC_K,    KC_X,                            KC_B,    KC_M,     KC_W,  KC_V,     KC_Z,  KC_GRV,\
   //|--------+--------+--------+--------+--------+--------+--------|     |--------+--------+--------+--------+--------+--------+--------|
-                         LCMD_T(KC_LBRC), LOWER, LT(_LOWER, KC_SPC),     SFT_T(KC_ENT), RAISE, ROPT_T(KC_RBRC) \
+                         LCMD_T(KC_LBRC), LOWER, LT(_LOWER, KC_SPC),     SFT_T(KC_BSPC), RAISE, ROPT_T(KC_RBRC) \
                                       //`--------------------------'     `--------------------------'
 
   ),
 
   [_LOWER] = LAYOUT_split_3x6_3( \
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,\
+       KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_ENT,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  KC_EQL,\
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,\
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LCMD,   LOWER,  KC_SPC,    _______,   RAISE, KC_ROPT \
+                                          KC_LCMD,   LOWER,  KC_SPC,    SFT_T(KC_ENT),   RAISE, KC_ROPT \
                                       //`--------------------------'  `--------------------------'
     ),
 
